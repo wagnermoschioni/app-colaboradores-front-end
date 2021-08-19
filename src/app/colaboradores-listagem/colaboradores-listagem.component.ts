@@ -7,7 +7,7 @@ import { ColaboradorService } from '../colaborador.service';
   styleUrls: ['./colaboradores-listagem.component.scss']
 })
 export class ColaboradoresListagemComponent implements OnInit {
-
+  listaVazia: boolean;
   colaboradores: Array<any>;
   constructor(private colaboradorService: ColaboradorService) { }
 
@@ -18,8 +18,12 @@ export class ColaboradoresListagemComponent implements OnInit {
   listar() {
 
     this.colaboradorService.listar().subscribe((dados) => {
+
       console.log(dados)
       this.colaboradores = dados
+      if (this.colaboradores.length === 0) {
+        this.listaVazia = true;
+      }
     });
   }
 

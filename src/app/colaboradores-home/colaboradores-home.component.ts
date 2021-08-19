@@ -15,6 +15,8 @@ export class ColaboradoresHomeComponent implements OnInit {
       this.router.navigate(['/cadastro']);
     } else if (operation === 2) {
       this.router.navigate(['/listagem']);
+    } else {
+      this.router.navigate(['/pesquisa']);
     }
 
   }

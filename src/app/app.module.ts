@@ -9,12 +9,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ColaboradoresCadastroComponent } from './colaboradores-cadastro/colaboradores-cadastro.component';
 import { ColaboradoresHomeComponent } from './colaboradores-home/colaboradores-home.component';
+import { ColaboradoresPesquisaNomeComponent } from './colaboradores-pesquisa-nome/colaboradores-pesquisa-nome.component';
 @NgModule({
   declarations: [
     AppComponent,
     ColaboradoresListagemComponent,
     ColaboradoresCadastroComponent,
-    ColaboradoresHomeComponent
+    ColaboradoresHomeComponent,
+    ColaboradoresPesquisaNomeComponent
   ],
   imports: [
     BrowserModule,

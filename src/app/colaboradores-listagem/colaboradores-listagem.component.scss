@@ -7,19 +7,25 @@
     grid-auto-flow: dense;
 }
 
+.alert-style {
+    text-align: center;
+    color: red;
+}
 .item {
     margin: 1px;
     padding: 5px;
     text-align: initial;
-    background: rgb(188, 203, 209);
+    background: rgb(224, 236, 192);
     font-size: 0.8em;
         font-family: 'Roboto', sans-serif;
     &__title {
-        font-size: 1.2em;
-        background: rgb(11, 167, 228);
-        color: white;
+        font-size: 1.0em;
+        font-weight: bold;
+        background: rgb(218, 238, 163);
+        color: black;
         margin: 1px;
     text-align: initial;
+    font-family: 'Roboto', sans-serif;
     }
 }
 
@@ -30,5 +36,5 @@
 
 h2 {
     text-align: center;
-    
+    background-color: rgb(147, 192, 181)
 }
