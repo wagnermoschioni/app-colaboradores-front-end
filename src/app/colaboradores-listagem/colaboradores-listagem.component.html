@@ -1,9 +1,7 @@
 <h2>Lista Colaboradores</h2>
 <br>
 <br>
-<div *ngIf="!listaVazia ; else alertaLista">
-
-
+<div *ngIf="!listaVazia ; else alertaListaVazia">
 
     <div>
         <section class="grid grid-auto-rows-2">
@@ -28,7 +26,7 @@
     </div>
 </div>
 
-<ng-template #alertaLista>
+<ng-template #alertaListaVazia>
     <div class="alert-style">Não há colaboradores registrados.</div>
 </ng-template>
 

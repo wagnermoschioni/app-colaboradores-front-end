@@ -5,6 +5,9 @@ h2 {
     font-family: 'Roboto', sans-serif;
    
 }
+.grid {
+    display: grid;
+}
 
 .grid-auto-rows-2 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -23,10 +26,10 @@ h2 {
 
 
 .grid {
-    display: grid;
-    width: 50%;
-    grid-gap: 7px;
-}
+        width: 80%;
+        margin: 0 auto;
+    }
+    
 .grid-collums {
     grid-template-columns: 1fr 5fr 10fr;
 }
@@ -36,10 +39,8 @@ h2 {
     font-size: 0.9em;
     background-color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
-
     &__title {
-        font-size: 1.0em;
-        
+        font-size: 1.0em;        
         font-weight: bold;
         background: rgb(218, 238, 163);
         color: black;

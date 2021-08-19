@@ -15,7 +15,7 @@ export class ColaboradorService {
   }
 
   filterByName() {
-    //
+    return this.http.get<any[]>(`${this.colaboradoresUrl}`);
   }
 
   gravarColaborador(colaborador: any) {

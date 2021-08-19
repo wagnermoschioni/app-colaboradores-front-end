@@ -1,7 +1,7 @@
 <main role="main">
     <section class="my-4">
         <div class="container">
-            <h2>Pesquisa de Colaborador</h2>
+            <h2>Consulta Colaborador</h2>
         </div>
     </section>
 </main>
@@ -12,8 +12,7 @@
         <input type="text" id="txtnome" name="nome" class="form-control" placeholder="digite aqui" />
         <button type="submit" class="btn-btn-primary">Pesquisar</button>
     </section>
-
-
+    <br>
     <div>
         <section class="grid grid-auto-rows-2">
             <div class="item__title">ID</div>
@@ -24,16 +23,15 @@
             <div class="item__title">Endereço</div>
         </section>
     </div>
-    <div>
-        <section class="grid grid-auto-rows-2">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-        </section>
 
-    </div>
 
 </div>
+
+<section class="grid grid-auto-rows-2" *ngFor="let c of colaboradores">
+    <div class="item">{{c.id}}</div>
+    <div class="item">{{c.nome | titlecase}}</div>
+    <div class="item">{{c.sobreNome | titlecase}}</div>
+    <div class="item">{{c.cargo | titlecase}}</div>
+    <div class="item">{{c.dataNacimento}}</div>
+    <div class="item">{{c.endereco | titlecase}}</div>
+</section>
