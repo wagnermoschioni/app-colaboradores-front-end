@@ -1,0 +1,21 @@
+<h2>Lista Colaboradores</h2>
+<div>
+    <section class="grid grid-auto-rows-2">
+        <div class="item__title">ID</div>
+        <div class="item__title">Nome</div>
+        <div class="item__title">Sobrenome</div>
+        <div class="item__title">Cargo</div>
+        <div class="item__title">Data Nasc</div>
+        <div class="item__title">Endereço</div>
+    </section>
+</div>
+<div>
+    <section class="grid grid-auto-rows-2" *ngFor="let c of colaboradores">
+        <div class="item">{{c.id}}</div>
+        <div class="item">{{c.nome | titlecase}}</div>
+        <div class="item">{{c.sobreNome | titlecase}}</div>
+        <div class="item">{{c.cargo | titlecase}}</div>
+        <div class="item">{{c.dataNascimento}}</div>
+        <div class="item">{{c.endereco | titlecase}}</div>
+    </section>
+</div>

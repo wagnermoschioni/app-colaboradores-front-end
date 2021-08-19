@@ -1,0 +1,68 @@
+<main role="main">
+    <section class="my-4">
+        <div class="container">
+            <h2>Cadastro de Colaboradores</h2>
+        </div>
+    </section>
+</main>
+
+<section>
+    <div class="container">
+        <form method="post" #frm="ngForm" (ngSubmit)="gravarColaborador(frm)">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+
+            </div>
+            <div class="form-group">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="txtsobrenome" name="sobrenome" class="form-control" placeholder="Sobrenome"
+                    [(ngModel)]="colaborador.sobrenome" required />
+            </div>
+            <div class="form-group">
+                <label for="cargo">Cargo</label>
+                <input type="text" id="txtcargo" name="cargo" class="form-control" placeholder="Cargo"
+                    [(ngModel)]="colaborador.cargo" required />
+            </div>
+            <div class="form-group">
+                <label for="datanasc">Data Nasc.</label>
+                <input type="text" id="txtdatanasc" name="datanasc" class="form-control" placeholder="DataNasc" />
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="txtendereco" name="endereco" class="form-control" placeholder="Endereco" />
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="frm.invalid">Salvar</button>
+        </form>
+    </div>
+</section>
+
+<div>
+    <form method="post" #frm="ngForm" (ngSubmit)="gravarColaborador(frm)">
+        <section class="grid grid-collums">
+
+            <div class="item">Nome</div>
+            <div class="item">
+                <input type="text" id="txtnome" name="nome" class="form-control" placeholder="Nome"
+                    [(ngModel)]="colaborador.nome" required />
+            </div>
+            <div class="item">Sobrenome</div>
+            <div class="item"> <input type="text" id="txtsobrenome" name="sobrenome" class="form-control"
+                    placeholder="Sobrenome" [(ngModel)]="colaborador.sobrenome" required />
+            </div>
+            <div class="item">Cargo</div>
+            <div class="item"><input type="text" id="txtcargo" name="cargo" class="form-control" placeholder="Cargo"
+                    [(ngModel)]="colaborador.cargo" required />
+            </div>
+            <div class="item">Data Nasc.</div>
+            <div class="item"><input type="text" id="txtdatanasc" name="datanasc" class="form-control"
+                    placeholder="DataNasc" />
+            </div>
+
+            <div class="item">Endereço</div>
+            <div class="item"><input type="text" id="txtendereco" name="endereco" class="form-control"
+                    placeholder="Endereco" />
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="frm.invalid">Salvar</button>
+        </section>
+    </form>
+</div>

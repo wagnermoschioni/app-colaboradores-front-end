@@ -1,0 +1,10 @@
+.container {
+    display: grid;
+    &__button {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.3em;
+        width: 50%;
+        background-color:darksalmon;
+    }    
+}

@@ -1,0 +1,22 @@
+
+h2 {
+    text-align: center;
+   
+}
+
+.grid {
+    display: grid;
+    width: 50%;
+    grid-gap: 10px;
+}
+.grid-collums {
+    grid-template-columns: 1fr 2fr;
+}
+
+.item {
+    font-size: 1.0em;
+    background-color: rgb(238, 225, 225);
+    font-family: 'Roboto', sans-serif;
+    
+
+}

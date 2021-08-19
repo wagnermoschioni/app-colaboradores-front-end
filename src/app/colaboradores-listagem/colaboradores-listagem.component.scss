@@ -1,0 +1,34 @@
+.grid {
+    display: grid;
+}
+
+.grid-auto-rows-2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: dense;
+}
+
+.item {
+    margin: 1px;
+    padding: 5px;
+    text-align: initial;
+    background: rgb(188, 203, 209);
+    font-size: 0.8em;
+        font-family: 'Roboto', sans-serif;
+    &__title {
+        font-size: 1.2em;
+        background: rgb(11, 167, 228);
+        color: white;
+        margin: 1px;
+    text-align: initial;
+    }
+}
+
+.grid {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    
+}
