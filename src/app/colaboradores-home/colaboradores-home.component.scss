@@ -5,17 +5,34 @@
         text-align: center;
         font-size: 1.0em;
         width: 45%;
+        font: bold 13px arial, sans-serif;
         
-        background-color:rgb(218, 238, 163);
+        background: #0066A2; 
     }    
 }
 
+.btn-btn-primary {
+    border-style: ridge;
+    align-items: center;
+    margin: 0 auto;
+    display: grid;
+    background: #0066A2;    
+    color: white;    
+    border-style: none;
+    height: 30px;    
+    width: 230px;    
+    font: bold 13px arial, sans-serif;    
+    text-shadow:cadetblue;    
+    }
 
-h2 {
-    background-color: rgb(147, 192, 181);
-    text-align: center;
-   
-}
+
+
+    h2 {
+        background-color: rgb(236, 204, 161);
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+       
+    }
 
 
 

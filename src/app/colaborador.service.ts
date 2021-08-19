@@ -14,6 +14,10 @@ export class ColaboradorService {
 
   }
 
+  filterByName() {
+    //
+  }
+
   gravarColaborador(colaborador: any) {
     return this.http.post(this.colaboradoresUrl, colaborador);
   }

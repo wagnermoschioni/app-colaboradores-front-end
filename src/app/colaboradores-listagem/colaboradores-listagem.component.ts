@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ColaboradorService } from '../colaborador.service';
 
 @Component({
@@ -9,7 +10,12 @@ import { ColaboradorService } from '../colaborador.service';
 export class ColaboradoresListagemComponent implements OnInit {
   listaVazia: boolean;
   colaboradores: Array<any>;
-  constructor(private colaboradorService: ColaboradorService) { }
+  constructor(private colaboradorService: ColaboradorService,
+    private router: Router) { }
+
+  gotoPage() {
+    this.router.navigate(['/home']);
+  }
 
   ngOnInit() {
     this.listar();

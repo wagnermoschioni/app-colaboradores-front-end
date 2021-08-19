@@ -1,6 +1,7 @@
 import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, ValidationErrors } from '@angular/forms';
+import { Router } from '@angular/router';
 import { ColaboradorService } from '../colaborador.service';
 
 @Component({
@@ -15,14 +16,17 @@ export class ColaboradoresCadastroComponent implements OnInit {
   colaborador: any;
   colaboradores: Array<any>;
   constructor(private colaboradorService: ColaboradorService,
-    private datePipe: DatePipe) { }
+    private router: Router) { }
+
+  gotoPage() {
+    this.router.navigate(['/home']);
+  }
 
   ngOnInit() {
     this.myDate = new Date();
     this.colaborador = {};
     this.colaboradores = [];
-    console.log(this.datePipe.transform(this.myDate, 'dd/MM/yyyy'));
-    console.log("silvio", this.myDate);
+
   }
 
   isValidDate(c: FormControl): ValidationErrors {

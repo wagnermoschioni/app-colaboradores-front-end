@@ -1,0 +1,56 @@
+
+h2 {
+    background-color: rgb(236, 204, 161);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+.grid-auto-rows-2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: dense;
+}
+
+.btn-btn-primary {
+    background: #0066A2;    
+    color: white;    
+    border-style: none;
+    height: 30px;    
+    width: 80px;    
+    font: bold 13px arial, sans-serif;    
+    text-shadow:none;    
+    }
+
+
+.grid {
+    display: grid;
+    width: 50%;
+    grid-gap: 7px;
+}
+.grid-collums {
+    grid-template-columns: 1fr 5fr 10fr;
+}
+
+.item {
+    font-weight: bold;
+    font-size: 0.9em;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+
+    &__title {
+        font-size: 1.0em;
+        
+        font-weight: bold;
+        background: rgb(218, 238, 163);
+        color: black;
+        margin: 1px;
+    text-align: initial;
+    font-family: 'Roboto', sans-serif;
+    }
+        
+}
+
+.form-control {
+    width: 300px;
+    
+}
