@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ColaboradoresListagemComponent } from './colaboradores-listagem/colaboradores-listagem.component';
@@ -22,7 +23,7 @@ import { ColaboradoresPesquisaNomeComponent } from './colaboradores-pesquisa-nom
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [ColaboradorService],
   bootstrap: [AppComponent]
