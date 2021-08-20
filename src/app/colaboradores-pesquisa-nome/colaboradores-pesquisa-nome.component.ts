@@ -17,10 +17,10 @@ export class ColaboradoresPesquisaNomeComponent implements OnInit {
   }
 
   filterByName() {
-    this.colaboradorService.filterByName().subscribe((dados) => {
-      console.log(dados)
-      this.colaboradores = dados
-      this.listaVazia = dados.length === 0;
-    });
+    // this.colaboradorService.filterByName().subscribe((dados) => {
+    //   console.log(dados)
+    //   this.colaboradores = dados
+    //  this.listaVazia = dados.length === 0;
+    // });
   }
 }
