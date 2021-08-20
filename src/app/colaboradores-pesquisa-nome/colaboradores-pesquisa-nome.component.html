@@ -29,9 +29,16 @@
 
 <section class="grid grid-auto-rows-2" *ngFor="let c of colaboradores">
     <div class="item">{{c.id}}</div>
-    <div class="item">{{c.nome | titlecase}}</div>
+    <div class="item">{{c.nome}} | titlecase}}</div>
     <div class="item">{{c.sobreNome | titlecase}}</div>
     <div class="item">{{c.cargo | titlecase}}</div>
     <div class="item">{{c.dataNacimento}}</div>
     <div class="item">{{c.endereco | titlecase}}</div>
 </section>
+
+<div>
+    <input class="botaoEnviar1" type="button" value="Voltar" style="display: block; margin: 0 auto;"
+        (click)='gotoPage()' target='/home'>
+
+
+</div>
